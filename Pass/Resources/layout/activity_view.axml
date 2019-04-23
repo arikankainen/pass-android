@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/specs_content"
+        android:layout_below="@id/toolbar">
+        <TextView 
+            android:text="Name"
+            style="@style/ViewTopicStyle" 
+            android:id="@+id/textViewSpecsNameTopic" />
+        <TextView
+            android:text="Name"
+            style="@style/ViewNormalStyle"
+            android:id="@+id/textViewSpecsName" />
+        <TextView
+            android:text="Address"
+            style="@style/ViewTopicStyle"
+            android:id="@+id/textViewSpecsAddressTopic" />
+        <TextView
+            android:text="Address"
+            style="@style/ViewNormalStyle"
+            android:id="@+id/textViewSpecsAddress" />
+        <TextView
+            android:text="Username"
+            style="@style/ViewTopicStyle"
+            android:id="@+id/textViewSpecsUserTopic" />
+        <TextView
+            android:text="User"
+            style="@style/ViewNormalStyle"
+            android:id="@+id/textViewSpecsUser" />
+        <TextView
+            android:text="Password"
+            style="@style/ViewTopicStyle"
+            android:id="@+id/textViewSpecsPassTopic" />
+        <TextView
+            android:text="Password"
+            style="@style/ViewNormalStyle"
+            android:id="@+id/textViewSpecsPass" />
+        <TextView
+            android:text="Comments"
+            style="@style/ViewTopicStyle"
+            android:id="@+id/textViewSpecsCommentsTopic" />
+        <TextView
+            android:text="Comments"
+            style="@style/ViewNormalStyle"
+            android:textIsSelectable="true"
+            android:id="@+id/textViewSpecsComments" />
+    </LinearLayout>
+</RelativeLayout>
+
+

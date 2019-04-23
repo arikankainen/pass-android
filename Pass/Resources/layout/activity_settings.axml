@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/specs_content"
+        android:layout_below="@id/toolbar">
+        <TextView 
+            android:text="FTP server and folder"
+            style="@style/SettingsTopic" />
+        <EditText
+            style="@style/SettingsEditText" 
+            android:id="@+id/settingsFtpServer" />
+        <TextView 
+            android:text="FTP username"
+            style="@style/SettingsTopic" />
+        <EditText
+            style="@style/SettingsEditText" 
+            android:id="@+id/settingsFtpUser" />
+        <TextView 
+            android:text="FTP password"
+            style="@style/SettingsTopic" />
+        <EditText
+            style="@style/SettingsEditText" 
+            android:id="@+id/settingsFtpPass" />
+        <TextView 
+            android:text="File password"
+            style="@style/SettingsTopic" />
+        <EditText
+            style="@style/SettingsEditText" 
+            android:id="@+id/settingsFilePass" />
+    </LinearLayout>
+</RelativeLayout>
